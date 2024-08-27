@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Menghilangkan scroll horizontal */
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to right, #ffd700, #ff4500); /* Gradien warna latar belakang */
+    animation: animateBackground 10s linear infinite; /* Animasi latar belakang */
+}
+
+@keyframes animateBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+.content {
+    /* Gaya untuk konten Anda */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
